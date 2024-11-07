@@ -48,7 +48,7 @@ export const createParkingSpace = async (req: Request, res: Response) => {
   } catch (error) {
     res.status(400);
     res.json({
-      error: formatError(error, "An error occurred while searching for a user"),
+      error: formatError(error, "An error occurred while creating a parking space"),
     });
   }
 };
