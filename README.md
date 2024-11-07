@@ -1,5 +1,5 @@
 ﻿# EngSoftware-HausParkApi
-_Trabalho para a materia de engenharia de softwares com o proposito de realizar testes unitátios para um aplicativo ficticio chamado HausPark. API desenvolvida com **typescript, express, sequelize, zod e mysql como um, banco de dados local**. Para os testes, os pacotes utilizados foram **jest, supertest e faker.js**._
+_Trabalho para a materia de engenharia de softwares com o proposito de realizar testes unitátios para um aplicativo ficticio chamado HausPark. API desenvolvida com **typescript, express, sequelize, zod e mysql como banco de dados local**. Para os testes, os pacotes utilizados foram **jest, supertest e faker.js**._
 
 ## Para rodar a API 
 ```
