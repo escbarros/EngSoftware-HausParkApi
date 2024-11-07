@@ -28,7 +28,6 @@ export default function format(
     return formattedErrorList;
   }
 
-  console.log(error);
   return [
     {
       field: "",

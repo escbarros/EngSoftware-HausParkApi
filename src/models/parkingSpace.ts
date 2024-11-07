@@ -5,12 +5,16 @@ import User from "./user";
 class ParkingSpace extends Model {
   public id!: number;
   public address!: string;
-  public width!: number;
-  public height!: number;
   public description!: string;
+
+  public width!: number;
+  public length!: number;
+  public height!: number;
 
   public hostId!: ForeignKey<User["id"]>;
   public host?: User;
+
+  public price!: number;
 
   public number_of_cars!: number;
   public accepts_parlay!: boolean;
@@ -39,6 +43,10 @@ ParkingSpace.init(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
+    length: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+    },
     description: {
       type: DataTypes.TEXT,
       allowNull: true,
@@ -50,6 +58,10 @@ ParkingSpace.init(
         model: User,
         key: "id",
       },
+    },
+    price: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
     },
     number_of_cars: {
       type: DataTypes.INTEGER,
